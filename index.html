@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🌟JavaScript DOM Color Changer🌟</h1>
+
+    <button>🔳Change Color🔳</button>
+
+    <script type="text/javascript">
+        var color = ["#39ff14","#062a78","#32cd32","#002395"];
+        var i = 0;
+        document.querySelector("button").addEventListener("click",
+        function(){
+            i = i < color.length ? ++i : 0;
+            document.querySelector("body").style.background = color[i];
+        })
+    </script>
+</body>
+</html>
